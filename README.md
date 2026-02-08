@@ -60,7 +60,7 @@
 ### 2. Удаленный запуск в Jenkins
 Сборка настроена в **Jenkins**.
 <p align="center">
-<img src="images/screenshots/jenkins.png" width="850">
+<img src="images/screenshots/jenkins_api.png" width="850">
 </p>
 
 ## 📊 Отчетность и мониторинг
