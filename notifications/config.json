@@ -5,7 +5,7 @@
     "language": "ru",
     "allureFolder": "allure-report",
     "enableChart": true,
-    "comment": "Отчет по результатам",
+    "comment": "Отчет по результатам прохождения API тестов",
     "reportLink": "https://jenkins.autotests.cloud/job/qaguru_diploma_kufar_api/allure/"
   },
   "telegram": {
