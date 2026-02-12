@@ -57,7 +57,7 @@
 
 `gradle clean test`
 
-### 2. Удаленный запуск в Jenkins
+### 2. Удаленный запуск в [Jenkins](https://jenkins.autotests.cloud/job/qaguru_diploma_kufar_api/)
 Сборка настроена в **Jenkins**.
 <p align="center">
 <img src="images/screenshots/jenkins_api.png" width="850">
@@ -65,7 +65,7 @@
 
 ## 📊 Отчетность и мониторинг
 
-### Allure Report (API Details)
+### [Allure Report (API Details)](https://jenkins.autotests.cloud/job/qaguru_diploma_kufar_api/9/allure/)
 
 В отличие от UI-тестов, здесь Allure используется для отображения структуры запросов. Благодаря фильтру `AllureRestAssured`, в отчетах доступны:  
 -  URL и метод запроса (GET/POST/etc).  
