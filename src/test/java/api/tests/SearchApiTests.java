@@ -9,12 +9,10 @@ import utils.PropertyReader;
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.*;
 
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class SearchApiTests extends BaseTest {
 
     @Test
-    @Order(1)
-    @DisplayName("API 1: Поиск товаров по названию")
+    @DisplayName("Поиск товаров по названию")
     void successSearchTest() {
         String query = PropertyReader.getProperty("search.query");
 
@@ -34,8 +32,7 @@ public class SearchApiTests extends BaseTest {
     }
 
     @Test
-    @Order(2)
-    @DisplayName("API 2: Проверка региона")
+    @DisplayName("Проверка региона")
     void regionFilterApiTest() {
         SearchResponse response = given()
                 .spec(Specs.requestSpec)
@@ -58,8 +55,7 @@ public class SearchApiTests extends BaseTest {
     }
 
     @Test
-    @Order(3)
-    @DisplayName("API 3: Сортировка по цене (убывание)")
+    @DisplayName("Сортировка по цене (убывание)")
     void sortingApiTest() {
         SearchResponse response = given()
                 .spec(Specs.requestSpec)
@@ -76,8 +72,7 @@ public class SearchApiTests extends BaseTest {
     }
 
     @Test
-    @Order(4)
-    @DisplayName("API 4: Фильтрация по категории (Телефоны)")
+    @DisplayName("Фильтрация по категории (Телефоны)")
     void categoryFilterApiTest() {
         String category = PropertyReader.getProperty("phone.category");
 
@@ -96,8 +91,7 @@ public class SearchApiTests extends BaseTest {
     }
 
     @Test
-    @Order(5)
-    @DisplayName("API 5: Проверка пагинации")
+    @DisplayName("Проверка пагинации")
     void paginationSizeTest() {
         int size = 5;
         SearchResponse response = given()
